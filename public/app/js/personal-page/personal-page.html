@@ -1,0 +1,51 @@
+<div ng-controller="PersonalPageController">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="btn-group col-lg-4 col-lg-offset-4" role="group">
+              <button ng-click="switchSettings()" type="button" class="btn btn-default">Мои настройки</button>
+              <button ng-click="switchItems()" type="button" class="btn btn-default">Мои объявления</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div ng-show="showSettings" class="settings col-lg-4 col-lg-offset-4">
+                <div class="input-group">
+                    <span class="input-group-addon">Логин: </span>
+                    <input ng-model="model.login" type="text" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Пароль: </span>
+                    <input ng-model="model.password" type="text" class="form-control" placeholder="************">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">E-mail: </span>
+                    <input ng-model="model.email" type="text" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Телефон: </span>
+                    <input ng-model="model.phone" type="text" class="form-control">
+                </div>
+                <button ng-click="saveUserData()" type="button" class="btn btn-primary btn-md">
+                    <i class="glyphicon glyphicon-floppy-disk"></i> Сохранить
+                </button>
+            </div>
+            <div ng-show="!showSettings" class="items">
+                <h1>Ваши обьявления</h1>
+                <div class="row text-center">
+                    <div ng-repeat="item in items" class="col-lg-3 hero-feature">
+                        <div class="thumbnail">
+                            <a class="a-foto" ng-href="#/item/{{item._id}}">
+                                <img class="img-foto" ng-src="{{item.img}}" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3><a href="">{{item.title}}</a></h3>
+                                <h3>{{item.price}} грн</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 item-details">
+            <h1>{{item.title}}</h1>
+            <span>Добавлено: в {{created_at}}</span>
+            <img ng-src="{{item.img}}" alt=""/>
+        </div>
+        <div class="col-md-4">
+            <h1><strong>{{item.price}} грн</strong></h1>
+
+            <div class="btn-group-vertical" role="group">
+                    <button type="button" class="btn btn-info btn-lg">
+                        <i class="glyphicon glyphicon-envelope "></i> Написать автору
+                    </button>
+                    <button type="button" class="btn btn-info btn-lg">
+                        <i class="glyphicon glyphicon-earphone "></i> Показать номер
+                    </button>
+            </div>
+        </div>
+    </div>
+
+</div>

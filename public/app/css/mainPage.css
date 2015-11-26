@@ -1,0 +1,27 @@
+
+.caption > h3:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    display: block;
+}
+
+.caption > h3 {
+    text-align: left;
+}
+
+.add-btn {
+    margin-top: -5px;
+    background-color: #FF8300;
+}
+ .a-foto {
+    display: block;
+/*    height: 100px;*/
+    text-align: center;
+    background: #f7f7f7;
+}
+
+ .img-foto {
+     height: 180px !important;
+ }

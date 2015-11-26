@@ -1,0 +1,40 @@
+<div class="container">
+    <div class='searchWrap img-rounded'>
+   	    <div class="col-md-12 col-sm-12 input-group">
+ 	        <input type="text" class="form-control">
+			<span class="input-group-btn">
+				<button class="btn btn-success findbutton" type="button">Поиск</button>
+			</span>
+	    </div>
+	</div>
+    <div class="categories">
+        <div class="row">
+            <div ng-repeat="category in categories" class="col-md-4 col-sm-6 col-xs-12">
+			<div class="myCentr">
+			
+                <a class="" ng-href="#/category/{{category.name}}">
+				<img ng-src="img/{{category.img}}" alt="..." class="img-circle smallImg">
+				{{category.description}}
+				</a>
+			</div>		
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Новые обьявления</h1>
+        <div class="row text-center">
+            <div ng-repeat="item in items" class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <a class="a-foto" ng-href="#/item/{{item._id}}">
+                        <img class="img-foto" ng-src="{{item.img}}" alt="">
+                    </a>
+                    <div class="caption">
+                        <h3><a href="">{{item.title}}</a></h3>
+                        <h3>{{item.price}} грн</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

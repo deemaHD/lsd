@@ -1,0 +1,29 @@
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Заголовок</label>
+            <div class="col-sm-4">
+                <input ng-model="item.title"  type="text" class="form-control" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Цена</label>
+            <div class="col-sm-4">
+                <input ng-model="item.price" type="text" class="form-control" placeholder="">
+            </div>
+        </div>
+
+        <div ngf-drop ngf-select ng-model="file" class="drop-box"
+             ngf-drag-over-class="dragover"
+             accept="image/*"
+             ngf-pattern="'image/*'">Drop pdfs or images here or click to upload</div>
+        <img ngf-src="file" ngf-resize="{width: 100, height: 100, quality: 0.9}">
+        <!--<div class="form-group">
+            <label class="col-sm-2 control-label">Фото</label>
+            <div class="col-sm-4">
+                <input file-model="item.img" type="file" multiple class="form-control">
+            </div>
+        </div>-->
+        <input type="submit" class="btn btn-info" ng-click="saveItem()" value="Добавить"/>
+    </form>
+</div>

@@ -1,0 +1,74 @@
+[
+  {
+    "title": "телефон Nokia 1100",
+    "price": 500,
+    "img": "img/item.jpg",
+    "created_at": "2015-09-30T10:42:09.614Z",
+    "user_id": "561fa8f860a2cdb409ca5fe3",
+    "user": {
+      "login": "Elon",
+      "phone": "0969659365",
+      "email": "elon.mask@gmail.com"
+    }
+  },
+  {
+    "title": "Книга Learn JavaScript",
+    "price": 100,
+    "img": "img/item.jpg",
+    "created_at": "2015-10-01T09:18:27.703Z",
+    "user_id": "561fa8f860a2cdb409ca5fe3",
+    "user": {
+      "login": "Elon",
+      "phone": "0969659365",
+      "email": "elon.mask@gmail.com"
+    }
+  },
+  {
+    "title": "Ноутбук Asus x73",
+    "price": 1000,
+    "img": "img/item.jpg",
+    "created_at": "2015-10-01T09:18:27.703Z",
+    "user_id": "561fa8f860a2cdb409ca5fe3",
+    "user": {
+      "login": "Elon",
+      "phone": "0969659365",
+      "email": "elon.mask@gmail.com"
+    }
+  },
+  {
+    "title": "Мобильный телефон LG",
+    "price": 1000,
+    "img": "img/item.jpg",
+    "created_at": "2015-10-01T09:18:27.703Z",
+    "user_id": "561fa8f860a2cdb409ca5fe3",
+    "user": {
+      "login": "Elon",
+      "phone": "0969659365",
+      "email": "elon.mask@gmail.com"
+    }
+  },
+  {
+    "title": "Бас гитара Godin Freeway 5",
+    "price": 10000,
+    "img": "img/item.jpg",
+    "created_at": "2015-10-01T09:18:27.703Z",
+    "user_id": "561fa8f860a2cdb409ca5fe4",
+    "user": {
+      "login": "Eddy",
+      "phone": "0969659365",
+      "email": "eddy.osmany@gmail.com"
+    }
+  },
+  {
+    "title": "фотоаппарат nikon d90",
+    "price": 5000,
+    "img": "img/item.jpg",
+    "created_at": "2015-10-01T09:18:27.703Z",
+    "user_id": "561fa8f860a2cdb409ca5fe4",
+    "user": {
+      "login": "Eddy",
+      "phone": "0969659365",
+      "email": "eddy.osmany@gmail.com"
+    }
+  }
+]
